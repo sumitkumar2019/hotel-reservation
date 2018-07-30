@@ -6,6 +6,7 @@
 * Git Client : https://git-scm.com/downloads
 * MongoDB : https://www.mongodb.com/download-center?jmp=nav#community
 * Rabbit MQ Server : http://www.rabbitmq.com/download.html
+* Postman : https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
 
 ### Configure Rabbit MQ Server
 * Download and install Rabbit MQ server.
@@ -56,5 +57,24 @@ npm start
 
 * Now Run api at <b>[`localhost:3000'].</b>
 
+### Sending Request to the Application
+
+* Open post man and Create Request
+* Select Post method for the request and in the URL type <b>http://localhost:3000/api/import</b>
+* Select body from the tab below the url.
+* After selection multiple radio button will be visible select <b>raw</b>.
+* Select format as Json and Enter input json in below format:
+
+  {
+  "hotelId": "hotel1",
+  "reservations": [
+    {
+      "reservationId": "reservation1",
+      "name": "guest1"
+    }
+  ]
+}
+
+<b>Note:</b> It is not mandatory to use postman tool you can use whatsoever tool or methodology to send request to the application. 
 
 Thank You
