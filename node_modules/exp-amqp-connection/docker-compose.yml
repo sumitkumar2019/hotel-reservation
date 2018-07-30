@@ -1,0 +1,11 @@
+app:
+  build: .
+  entrypoint: /bin/bash -c 
+  links:
+    - rabbitmq:linked-rabbitmq
+rabbitmq:
+  image: rabbitmq:3.5-management
+  ports:
+    - "5672:5672"
+    - "15672:15672"
+

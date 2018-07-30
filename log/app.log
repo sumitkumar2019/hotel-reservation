@@ -1,0 +1,25 @@
+[2018-07-30T16:43:57.377Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1","name":"guest1"}]}
+[2018-07-30T16:43:57.517Z] info: Received HTTP request - {}
+[2018-07-30T16:43:57.531Z] info: Push job to queue - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1","name":"guest1"}]}
+[2018-07-30T16:43:57.593Z] info: Received HTTP request - {"reservations":[{"reservationId":"reservation1","name":"guest1"}]}
+[2018-07-30T16:43:57.662Z] info: Received HTTP request - {"hotelId":"hotel1"}
+[2018-07-30T16:43:57.718Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{}]}
+[2018-07-30T16:43:57.777Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":""}]}
+[2018-07-30T16:43:57.826Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1"}]}
+[2018-07-30T16:43:57.870Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1","name":""}]}
+[2018-07-30T16:43:58.185Z] info: Push job to queue - abc
+[2018-07-30T16:43:58.396Z] info: Received HTTP request - undefined
+[2018-07-30T16:43:58.442Z] info: Received HTTP request - {}
+[2018-07-30T16:43:58.488Z] info: Received HTTP request - {"hotelId":null}
+[2018-07-30T16:43:58.529Z] info: Received HTTP request - {"hotelId":"hotel1"}
+[2018-07-30T16:43:58.574Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{}]}
+[2018-07-30T16:43:58.624Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":1}]}
+[2018-07-30T16:43:58.671Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1"}]}
+[2018-07-30T16:43:58.715Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1","name":1}]}
+[2018-07-30T16:43:58.756Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1","name":"guest1"}]}
+[2018-07-30T16:44:23.126Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1","name":"guest1"},{"reservationId":"reservation4","name":"guest4"}]}
+[2018-07-30T16:44:23.175Z] info: Push job to queue - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1","name":"guest1"},{"reservationId":"reservation4","name":"guest4"}]}
+[2018-07-30T16:44:33.180Z] info: Started processing job - {"hotelId":"hotel1","reservations":[{"reservationId":"reservation1","name":"guest1"},{"reservationId":"reservation4","name":"guest4"}]}
+[2018-07-30T16:44:34.290Z] info: Duplicated Reservation not processed for Reservation Id: reservation1 - Job -{"name":"guest1","hotelId":"hotel1","_id":"reservation1"}
+[2018-07-30T16:44:35.301Z] info: Duplicated Reservation not processed for Reservation Id: reservation4 - Job -{"name":"guest4","hotelId":"hotel1","_id":"reservation4"}
+[2018-07-30T16:44:51.214Z] info: Received HTTP request - {"hotelId":"hotel1","reservations":[{"reservationId":1,"name":"guest1"},{"reservationId":2,"name":"guest4"}]}
